@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  earth_service:
+    image: web_service:latest
+    ports:
+      - "600:600"
+    working_dir: /app
+    restart: always
