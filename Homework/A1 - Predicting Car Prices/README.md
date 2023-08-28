@@ -20,12 +20,12 @@ Before you begin, ensure you have the following prerequisites:
 1. Clone this repository to your local machine using:
 
    ```bash
-   git clone https://github.com/your-username/regression-website-docker.git
+   git clone https://github.com/Nutdanai1221/ML.git
 
 ## Project Structure
 
 The project is organized as follows:
 
-- **app/**: Holds the files for the web application, including `app.py`, `templates/`, and `assets/`.
+- **app/**: Holds the files for the web application, including `app.py`, `templates/`.
 - **requirements.txt**: Lists the required Python packages and their versions for reproducibility.
 - **README.md**: The documentation you're currently reading, which provides an overview of the project.   
