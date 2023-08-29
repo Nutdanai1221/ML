@@ -7,7 +7,7 @@ This repository contains the implementation of a simple web-based car price pred
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
 - [Project Structure](#project-structure)
-
+- [Preview](#preview)
 ## Prerequisites
 
 Before you begin, ensure you have the following prerequisites:
@@ -51,10 +51,13 @@ Feel free to reach out if you encounter any issues or need further assistance.
 
 The project is organized as follows:
 
-- **app/**: Holds the files for the web application, including `app.py`, `templates/` and `static/`.
-- **requirements.txt**: Lists the required Python packages and their versions for reproducibility.
+- **app/**: This directory holds the files for the web application, including `app.py`, `templates/`, and `static/`.
+- **code/**: Contains the `Assignment.ipynb` file.
+- **model/**: Contains the model for regression and the Scaler object.
+- **Dockerfile**: The Dockerfile provides instructions for building a Docker container for your application.
+- **requirements.txt**: This file lists the required Python packages and their versions for reproducibility.
 - **README.md**: The documentation you're currently reading, which provides an overview of the project.
-- i feel sleepy now maybe tomorrow
+
 
 ## Preview
 
