@@ -61,7 +61,7 @@ The project is organized as follows:
 1. **Homepage Entry:**
    To start using the web app, open your web browser and enter the following URL in the address bar: `http://127.0.0.1:600`.
    
-   ![Homepage Entry](images/homepage.png)
+   ![Homepage Entry](https://github.com/Nutdanai1221/ML/blob/main/Homework/A1-Predicting_Car_Prices/figure/homepage.png)
 
 2. **Input Feature Information:**
    On the web page, you'll see a form where you need to provide information about the car you're interested in. You'll be asked to enter the following details:
@@ -71,13 +71,13 @@ The project is organized as follows:
 
    Fill in these fields with the corresponding values for the car you want to predict the price for.
    
-   ![Input Features](images/input_features.png)
+   ![Input Features](https://github.com/Nutdanai1221/ML/blob/main/Homework/A1-Predicting_Car_Prices/figure/fill.png)
 
 3. **View Prediction and Suggestions:**
-   After you've entered the required information, click the "Predict" button. The web app will process the data and provide you with the following results:
+   After you've entered the required information, click the "Predict Price" button. The web app will process the data and provide you with the following results:
    - Predicted price of the car
    - Suggestions for cars with features similar to the predicted price
    
    You can use this information to get an idea of how much the car might cost and explore other cars with similar features.
    
-   ![View Prediction](images/view_prediction.png)
+   ![View Prediction](https://github.com/Nutdanai1221/ML/blob/main/Homework/A1-Predicting_Car_Prices/figure/result.png)
