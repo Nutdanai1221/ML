@@ -76,44 +76,22 @@
         <form action="/receive_data" method="post">
             <div class="input-group">
                 <label for="engine">Engine</label>
-                <input type="text" id="textbox1" name="engine" placeholder="Engine Capacity" required>
+                <input type="text" id="textbox1" name="engine" placeholder="Engine Capacity" >
             </div>
             
             <div class="input-group">
                 <label for="maxpower">Max Power</label>
-                <input type="text" id="textbox2" name="maxpower" placeholder="Max Power (hp)" required>
+                <input type="text" id="textbox2" name="maxpower" placeholder="Max Power (hp)" >
             </div>
             
             <div class="input-group">
                 <label for="year">Year</label>
-                <input type="text" id="textbox3" name="year" placeholder="Manufacturing Year" required>
+                <input type="text" id="textbox3" name="year" placeholder="Manufacturing Year" >
             </div>
             
             <input type="submit" value="Predict Price">
         </form>
     </div>
 </body>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const form = document.querySelector("form");
-        form.addEventListener("submit", function(event) {
-            const inputs = form.querySelectorAll("input");
-            let isFormValid = true;
-
-            inputs.forEach(input => {
-                if (!input.value) {
-                    input.classList.add("error");
-                    isFormValid = false;
-                } else {
-                    input.classList.remove("error");
-                }
-            });
-
-            if (!isFormValid) {
-                event.preventDefault();
-            }
-        });
-    });
-</script>
 
 </html>

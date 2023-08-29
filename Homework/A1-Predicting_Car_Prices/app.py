@@ -25,7 +25,12 @@ def receive_data():
     engine = request.form.get('engine')
     power = request.form.get('maxpower')
     year = request.form.get('year')
-    
+    if not engine :
+        engine = 1248 #from median
+    if not power :
+        power = 83.14 #from median
+    if not year :
+        year = 2016 #from median
     
 
     input_values = np.array([[float(engine), float(power), int(year)]])
@@ -36,7 +41,8 @@ def receive_data():
     # print(target_values)
     
 
-    database['distance'] = np.sqrt(np.sum((database[['engine', 'max_power', 'year', 'selling_price']].values - target_values) ** 2, axis=1))
+    #database['distance'] = np.sqrt(np.sum((database[['engine', 'max_power', 'year', 'selling_price']].values - target_values) ** 2, axis=1))
+    database['distance'] = np.sqrt(np.sum(((database[['engine', 'max_power', 'year', 'selling_price']].values - target_values) ** 2) * np.array([1, 1, 1, 0.01]), axis=1))
     
     most_similar_row = database[database['distance'] == database['distance'].min()]
 

@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   earth_service:
-    image: web_service:latest
+    image: nutdanat1221/reg_service
     ports:
       - "600:600"
     working_dir: /app
