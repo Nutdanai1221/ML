@@ -55,16 +55,15 @@ def receive_data():
     
     df_unique = most_similar_row.drop_duplicates(subset=['name'])
 
-    url = f"https://www.google.com/search?q={query}&tbm=isch"  # the URL of the search result page
+    search_query = query.replace(" ", "+")
+    url = f"https://www.google.com/search?q={search_query}&tbm=isch"  # the URL of the search result page
     response = requests.get(url)  # make a GET request to the URL
     soup = BeautifulSoup(response.text, "html.parser")  # parse the HTML content with BeautifulSoup
     # find the first image link by searching for the appropriate tag and attribute
-    img_tag = soup.find("img", {"class": "yWs4tf"})
-    if img_tag is not None:
-        img_link = img_tag.get("src")
-        # print(img_link)  # print the first image link
-    else:
-        print("No image found on the page.")
+    img_tags = soup.find_all("img")
+    img_links = [img["src"] for img in img_tags if img.has_attr("src")][1]
+
+
     return render_template('response.html', 
                        textbox1_data=np.exp(predicted_price),
                        car_name=df_unique['name'].item(),
@@ -72,7 +71,7 @@ def receive_data():
                        engine=df_unique['engine'].item(),
                        car_year=df_unique['year'].item(),
                        car_price=df_unique['selling_price'].item(),
-                       img = img_link)
+                       img = img_links)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=600)
