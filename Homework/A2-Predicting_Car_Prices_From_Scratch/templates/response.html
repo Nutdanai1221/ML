@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Received</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* background-color: #f4f4f4; */
+            background-image: url('/static/sea.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #333;
+        }
+
+        .prediction {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #222;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Car Price Predicted</h1>
+        <p>Your car's predicted price based on the provided data:</p>
+        <p class="prediction"><strong>Price: ${{ textbox1_data[0] }}</strong></p>
+
+        
+        <h2>Suggested Car:</h2>
+        <img src= "static/suggest.jpg" alt="Suggested Car" width="200">
+        <p><strong>Car Name:</strong> {{ car_name }}</p>
+        <p><strong>Max Power:</strong> {{ max_power }}</p>
+        <p><strong>Engine:</strong> {{ engine }}</p>
+        <p><strong>Car Year:</strong> {{ car_year }}</p>
+        <p><strong>Car Actual price:</strong> {{ car_price }}</p>
+        
+        <!-- Button to navigate back to the main page -->
+        <button onclick="location.href='/'">Back to Main</button>
+    </div>
+</body>
+</html>

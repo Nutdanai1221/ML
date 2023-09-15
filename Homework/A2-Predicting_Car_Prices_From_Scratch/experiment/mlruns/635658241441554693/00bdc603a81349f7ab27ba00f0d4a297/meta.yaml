@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/635658241441554693/00bdc603a81349f7ab27ba00f0d4a297/artifacts
+end_time: 1694667711189
+entry_point_name: ''
+experiment_id: '635658241441554693'
+lifecycle_stage: active
+run_id: 00bdc603a81349f7ab27ba00f0d4a297
+run_name: Polynomial regression method-sto-lr-0.001-init-zero
+run_uuid: 00bdc603a81349f7ab27ba00f0d4a297
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694622415867
+status: 3
+tags: []
+user_id: Earth

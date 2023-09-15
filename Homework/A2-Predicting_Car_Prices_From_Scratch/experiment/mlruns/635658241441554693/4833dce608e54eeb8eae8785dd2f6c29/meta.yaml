@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/635658241441554693/4833dce608e54eeb8eae8785dd2f6c29/artifacts
+end_time: 1694665759784
+entry_point_name: ''
+experiment_id: '635658241441554693'
+lifecycle_stage: active
+run_id: 4833dce608e54eeb8eae8785dd2f6c29
+run_name: method-batch-lr-0.01-reg-Ridge-init-zero
+run_uuid: 4833dce608e54eeb8eae8785dd2f6c29
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694623990947
+status: 3
+tags: []
+user_id: Earth

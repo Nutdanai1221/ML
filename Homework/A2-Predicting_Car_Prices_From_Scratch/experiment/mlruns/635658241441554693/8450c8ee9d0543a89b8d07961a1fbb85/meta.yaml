@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/635658241441554693/8450c8ee9d0543a89b8d07961a1fbb85/artifacts
+end_time: 1694667710233
+entry_point_name: ''
+experiment_id: '635658241441554693'
+lifecycle_stage: active
+run_id: 8450c8ee9d0543a89b8d07961a1fbb85
+run_name: Polynomial regression method-batch-lr-0.0001-init-xaviar
+run_uuid: 8450c8ee9d0543a89b8d07961a1fbb85
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694620961130
+status: 3
+tags: []
+user_id: Earth

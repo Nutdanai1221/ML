@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/635658241441554693/1827f3de52bc43b8800dfd72cbf8e119/artifacts
+end_time: 1694665764085
+entry_point_name: ''
+experiment_id: '635658241441554693'
+lifecycle_stage: active
+run_id: 1827f3de52bc43b8800dfd72cbf8e119
+run_name: method-batch-lr-0.01-reg-Lasso-init-zero
+run_uuid: 1827f3de52bc43b8800dfd72cbf8e119
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694627640094
+status: 3
+tags: []
+user_id: Earth

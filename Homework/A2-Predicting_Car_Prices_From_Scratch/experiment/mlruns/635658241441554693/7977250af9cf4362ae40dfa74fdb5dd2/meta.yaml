@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/635658241441554693/7977250af9cf4362ae40dfa74fdb5dd2/artifacts
+end_time: 1694665762338
+entry_point_name: ''
+experiment_id: '635658241441554693'
+lifecycle_stage: active
+run_id: 7977250af9cf4362ae40dfa74fdb5dd2
+run_name: method-sto-lr-0.0001-reg-Ridge-init-xaviar
+run_uuid: 7977250af9cf4362ae40dfa74fdb5dd2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694626962713
+status: 3
+tags: []
+user_id: Earth
