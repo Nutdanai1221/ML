@@ -19,7 +19,7 @@ Before you begin, ensure you have the following prerequisites:
 - Git: [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
 ## Getting Started
-
+For the compose file you can use [docker-compose]()
 Follow these steps to set up and deploy the project on your local machine:
 
 1. Clone this repository to your local machine by executing the following command in your terminal:
@@ -31,7 +31,7 @@ Follow these steps to set up and deploy the project on your local machine:
 2. Navigate to the project directory for A2 using the command:
 
     ```bash
-    cd ML/Homework/A2-Predicting_Car_Price_Enhanced
+    cd ML/Homework/A2-Predicting_Car_Prices_From_Scratch
     ```
 
 3. Deploy the website within a Docker container using `docker-compose`. Execute the following command to build and start the necessary containers, based on the configurations specified in the `docker-compose.yml` file:
@@ -63,6 +63,7 @@ In this section, we performed various experiments to optimize our model's perfor
 
 ## Preview
 
+You can visit website for this project [Here](https://st123055-a2.ml2023.cs.ait.ac.th/)
 1. **Homepage Entry:**
    To start using the enhanced web app, open your browser and enter: `http://127.0.0.1:600`.
    
