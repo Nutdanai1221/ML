@@ -18,4 +18,4 @@ jobs:
     - name: Install dependencies
       run: pip install -r Homework/A3-Car-Prices_classification/requirement.txt
     - name: Run tests
-      run: python Homework/HW3_App_Predicting_Car_Price_Classification/test/testing.py
+      run: python Homework/A3-Car-Prices_classification/test/testing.py
