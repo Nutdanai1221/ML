@@ -8,13 +8,13 @@ import mlflow
 mlflow.set_tracking_uri("https://mlflow.cs.ait.ac.th/")
 mlflow.set_experiment(experiment_name="st123055-a3")
 app = Flask(__name__)
-database = pd.read_csv('database.csv')
+database = pd.read_csv('Homework/A3-Car-Prices_classification/database.csv')
 logged_model = 'runs:/2aeccf1dab80490e849113891a95d29d/model'
 loaded = pickle.load(open("data_picture.pkl", "rb"))
-loaded_model = pickle.load(open('./model/price_predict2.model', 'rb'))
-loaded_scaler = pickle.load(open('./model/scaler2.pkl', 'rb'))
-newest_model = pickle.load(open('./model/new_model.pkl', 'rb'))
-newest_model_scaler = pickle.load(open('./model/scaler_poly.pkl', 'rb'))
+loaded_model = pickle.load(open('Homework/A3-Car-Prices_classification/model/price_predict2.model', 'rb'))
+loaded_scaler = pickle.load(open('Homework/A3-Car-Prices_classification/model/scaler2.pkl', 'rb'))
+newest_model = pickle.load(open('Homework/A3-Car-Prices_classification/model/new_model.pkl', 'rb'))
+newest_model_scaler = pickle.load(open('Homework/A3-Car-Prices_classification/model/scaler_poly.pkl', 'rb'))
 typee = None
 map_class = ["cheap", "medium", "expensive", "luxury"]
 classification = mlflow.pyfunc.load_model(logged_model)
