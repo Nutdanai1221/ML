@@ -19,8 +19,20 @@ def client():
 
 def test_homepage_response(client):
     response = client.get('/')
-    assert response.status_code == 200  # Check if the homepage responds with a 200 status code
-    print("Homepage Test Passed")  # Print a message indicating the test passed
+    assert response.status_code == 200  
+    print("Homepage Test Passed")  
+def test_homepage_response(client):
+    response = client.get('/website1')
+    assert response.status_code == 200  
+    print("Page old Test Passed")  
+def test_homepage_response(client):
+    response = client.get('/website2')
+    assert response.status_code == 200  
+    print("Page new Test Passed")  
+def test_homepage_response(client):
+    response = client.get('/website3')
+    assert response.status_code == 200  
+    print("Page Clasification Test Passed")      
 
 
 def test_receive_data_post_response(client):
@@ -30,8 +42,8 @@ def test_receive_data_post_response(client):
         'year': '2016'
     }
     response = client.post('/receive_data', data=data)
-    assert response.status_code == 200  # Check if the post request to receive_data responds with a 200 status code
-    print("Receive Data Test Passed")  # Print a message indicating the test passed
+    assert response.status_code == 200  
+    print("Receive Data Test Passed") 
 
 if __name__ == '__main__':
     pytest.main()
