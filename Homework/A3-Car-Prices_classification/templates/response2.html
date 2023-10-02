@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Received</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* background-color: #f4f4f4; */
+            background-image: url('/static/sea.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #333;
+        }
+
+        .prediction {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #222;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Car Price Classification</h1>
+        <p>Your car's predicted class based on the provided data:</p>
+        <img src= "static/suggest.jpg" alt="Suggested Car" width="200">
+        <h2>Your car price is {{ classi }}</h2>
+        <button onclick="location.href='/'">Back to Main</button>
+    </div>
+</body>
+</html>

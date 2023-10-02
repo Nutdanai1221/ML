@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price Predictor</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('/static/car.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #333;
+        }
+
+        .container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 2rem;
+            border-radius: 5px;
+            max-width: 450px;
+        }
+
+        h1 {
+            margin-bottom: 1rem;
+        }
+
+        p.description {
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        .input-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        input[type="text"] {
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            width: 100%;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus {
+            border-color: #666;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Car Price Classification</h1>
+        <p class="description">
+            This website take the input(engine, max_power, years) to predict the class of car ("cheap", "medium", "expensive", "luxury")
+        </p>
+
+        <form action="/receive_data" method="post">
+            <div class="input-group">
+                <label for="engine">Engine</label>
+                <input type="text" id="textbox1" name="engine" placeholder="Engine Capacity">
+            </div>
+
+            <div class="input-group">
+                <label for="maxpower">Max Power</label>
+                <input type="text" id="textbox2" name="maxpower" placeholder="Max Power (hp)">
+            </div>
+
+            <div class="input-group">
+                <label for="year">Year</label>
+                <input type="text" id="textbox3" name="year" placeholder="Manufacturing Year">
+            </div>
+
+            <input type="submit" value="Predict Price">
+        </form>
+    </div>
+</body>
+
+</html>

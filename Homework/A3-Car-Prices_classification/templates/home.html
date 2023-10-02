@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Homepage</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        .navbar a {
+            margin: 0 1rem;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+        }
+
+        .navbar a:hover {
+            color: #f9f9f9;
+            background-color: #555;
+            border-radius: 3px;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 4rem auto;
+            padding: 2rem;
+            background-color: #fff;
+        }
+
+        h1, h2, h3, p {
+            margin: 1.2rem 0;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="{{ url_for('website1', user_clicked='website1') }}">Old Regression Model</a>
+        <a href="{{ url_for('website2', user_clicked='website2') }}">New Regression Model</a>
+        <a href="{{ url_for('website3', user_clicked='website3') }}">Classification Model</a>
+        
+    </div>
+    <div class="content">
+        <h1>Machine Learning Homepage</h1>
+        <h2>Fundamentals of Linear Regression</h2>
+        <p>
+            Linear Regression is a powerful machine learning algorithm used for predicting a continuous target variable based on one or more input features.
+        </p>
+        <h3>1. Simple Linear Regression</h3>
+        <p>
+            It models the relationship between a single input feature (<em>x</em>) and the target variable (<em>y</em>), expressed as: <em>y = mx + b</em>.
+        </p>
+        <h3>2. Multiple Linear Regression</h3>
+        <p>
+            This extends the concept to multiple input features (<em>x₁, x₂, ..., xn</em>) and is expressed as: <em>y = θ₀ + θ₁x₁ + θ₂x₂ + ... + θₙxₙ</em>.
+        </p>
+        <h3>3. Gradient Descent</h3>
+        <p>
+            An optimization algorithm used in training linear regression models. It iteratively adjusts the model's coefficients to minimize the cost or loss function. The update rule is: <em>θᵢ = θᵢ - α * ∂(Cost Function) / ∂(θᵢ)</em>.
+        </p>
+    </div>
+</body>
+
+</html>
