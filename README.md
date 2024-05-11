@@ -11,8 +11,6 @@ To explore more about Machine Learning from scratch using Python, feel free to v
 - [About](#about)
 - [Course Overview](#course-overview)
 - [Assignments](#assignments)
-- [Paper Reviews](#paper-reviews)
-- [Planned Group Project](#planned-group-project)
 - [Getting Started](#getting-started)
 
 ## Course Overview
@@ -28,23 +26,6 @@ In this class, we are exploring the fascinating world of machine learning, cover
 ## Assignments
 
 You can find the assignments for this course in the [Homework](/Homework) directory of this repository. Each assignment comes with its own README explaining the task and submission details.
-
-## Paper Reviews
-
-As part of our course, I have been reading and summarizing research papers in the field of machine learning. Below, you can find tables summarizing the papers I have read:
-### Paper 1: A Transformer-based Framework for Multivariate Time Series Representation Learning (KDD 2021)
-| Problem          | Key Related Work | Research Gap | Solution | Results |
-|------------------|------------------|--------------|----------|---------|
-| Problem statement| Related work 1  | Research gap| Solution | Results |
-| ...              | ...              | ...          | ...      | ...     |
-
-
-## Planned Group Project
-
-As part of this course, we have a group project planned for the future. We will be working on an exciting machine learning project, and more details will be provided as the project progresses.
-
-Stay tuned for updates on the group project!
-
 
 
 ## Getting Started
